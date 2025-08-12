@@ -1,0 +1,12 @@
+@font-face{
+    font-family: 'rugen';
+    src: url("./assets/font/rugenexpanded.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'mcl';
+    src: url("./assets/font/mclaren.otf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
