@@ -10,3 +10,47 @@
     font-weight: normal;
     font-style: normal;
 }
+
+#carousel::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+#carousel img{
+    height: 8rem;
+    width: auto;
+    flex-shrink: 0;
+    //margin-right: 0.5rem;
+    user-select: none;
+    pointer-events: auto;
+}
+#carousel {
+    mask-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 25%,
+        rgba(0, 0, 0, 1) 75%,
+        rgba(0, 0, 0, 0)
+    );
+}
+#carousell::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+#carousell img{
+    height: 8rem;
+    width: auto;
+    flex-shrink: 0;
+    //margin-right: 0.5rem;
+    user-select: none;
+    pointer-events: auto;
+}
+#carousell {
+    mask-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1) 25%,
+        rgba(0, 0, 0, 1) 75%,
+        rgba(0, 0, 0, 0)
+    );
+}
+
+.navBar {
+    position: sticky;
+    top: 0;
+}
