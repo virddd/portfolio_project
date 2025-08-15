@@ -11,16 +11,18 @@
     font-style: normal;
 }
 
+#paling{
+    pointer-events: none;
+}
+#atas{
+    pointer-events: none;
+}
+#atas p{
+    pointer-events: none;
+}
+
 #carousel::-webkit-scrollbar {
     display: none; /* Chrome, Safari, and Opera */
-}
-#carousel img{
-    height: 8rem;
-    width: auto;
-    flex-shrink: 0;
-    //margin-right: 0.5rem;
-    user-select: none;
-    pointer-events: auto;
 }
 #carousel {
     mask-image: linear-gradient(to right,
@@ -30,27 +32,68 @@
         rgba(0, 0, 0, 0)
     );
 }
-#carousell::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, and Opera */
-}
-#carousell img{
-    height: 8rem;
-    width: auto;
+#carousel img{
     flex-shrink: 0;
-    //margin-right: 0.5rem;
     user-select: none;
     pointer-events: auto;
+}
+#carousel::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #000 0%, #000 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0) 60%, #000 100%, #000 100%);
+    mix-blend-mode: saturation;
+}
+
+#carousell::-webkit-scrollbar { 
+    display: none;
+}
+#carousell img{
+    flex-shrink: 0;
+    user-select: none;
+    pointer-events: auto;
+
+    /* -webkit-mask-image: linear-gradient(to right, transparent 0rem, black 2rem, black calc(100% - 2rem), transparent 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: linear-gradient(to right, transparent 0rem, black 2rem, black calc(100% - 2rem), transparent 100%);
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%; */
+
+    -webkit-mask-image: linear-gradient(to right, transparent, black 0.6rem);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    webkit-mask-image: linear-gradient(to right, transparent, black 0.6rem);
+    webkit-mask-repeat: no-repeat;
+    webkit-mask-size: 100% 100%;
 }
 #carousell {
     mask-image: linear-gradient(to right,
         rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 1) 25%,
-        rgba(0, 0, 0, 1) 75%,
+        rgba(0, 0, 0, 1) 30%,
+        rgba(0, 0, 0, 1) 70%,
         rgba(0, 0, 0, 0)
     );
+//    gap: clamp(-0.5rem, -1vw, -1rem); 
 }
+#carousell::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, #000 0%, #000 20%, rgba(0,0,0,0) 45%, rgba(0,0,0,0) 55%, #000 80%, #000 100%);
+    mix-blend-mode: saturation;
+}
+/* #carousell img::before{
+    content: "";
+    position: absolute;
+    width: 2rem;
+    height: 100%;
+    background: linear-gradient(to right,rgba(255,255,255,1), rgba(255,255,255,0));
+    //mix-blend-mode: saturation;
+} */
 
 .navBar {
     position: sticky;
     top: 0;
 }
+
