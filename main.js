@@ -12,16 +12,20 @@ const offsetRem = 100;
 window.addEventListener ('scroll', () => {
     if(navBar.getBoundingClientRect().top === 0) {
         //home.classList.remove('bg-transparent');
-        navBar.classList.remove('bg-[#151e33]');
+        navBar.classList.remove('dark:bg-[#151e33]');
+        navBar.classList.remove('bg-slate-300');
         //home.classList.add('bg-[#101727]')
-        navBar.classList.add('bg-[#101727]');
+        navBar.classList.add('dark:bg-[#101727]');
+        navBar.classList.add('bg-slate-400');
         navBar.classList.add('shadow-md/70');
         //navBar.classList.add('brightness-120');
     }else {
         //home.classList.remove('bg-[#101727]');
-        navBar.classList.remove('bg-[#101727]');
+        navBar.classList.remove('dark:bg-[#101727]');
+        navBar.classList.remove('bg-slate-400');
         //home.classList.add('bg-transparent');
-        navBar.classList.add('bg-[#151e33]');
+        navBar.classList.add('dark:bg-[#151e33]');
+        navBar.classList.add('bg-slate-300');
         navBar.classList.remove('shadow-md/70');
         //navBar.classList.remove('brightness-120');
     }
