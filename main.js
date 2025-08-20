@@ -11,24 +11,36 @@ const offsetRem = 100;
 
 window.addEventListener ('scroll', () => {
     if(navBar.getBoundingClientRect().top === 0) {
-        //home.classList.remove('bg-transparent');
-        navBar.classList.remove('dark:bg-[#151e33]');
-        navBar.classList.remove('bg-slate-300');
-        //home.classList.add('bg-[#101727]')
-        navBar.classList.add('dark:bg-[#101727]');
-        navBar.classList.add('bg-slate-400');
-        navBar.classList.add('shadow-md/70');
-        //navBar.classList.add('brightness-120');
-    }else {
-        //home.classList.remove('bg-[#101727]');
-        navBar.classList.remove('dark:bg-[#101727]');
-        navBar.classList.remove('bg-slate-400');
-        //home.classList.add('bg-transparent');
-        navBar.classList.add('dark:bg-[#151e33]');
-        navBar.classList.add('bg-slate-300');
-        navBar.classList.remove('shadow-md/70');
-        //navBar.classList.remove('brightness-120');
-    }
+
+        navBar.classList.remove(
+          'backdrop-blur-none',
+          'backdrop-brightness-100',
+          'shadow-none',
+          'dark:backdrop-brightness-100'
+        );
+
+        navBar.classList.add(
+          'backdrop-blur-sm',
+          'backdrop-brightness-150',  
+          'shadow-md/70',
+          'dark:backdrop-brightness-80'
+        );
+
+        }else {
+        navBar.classList.remove(
+          'backdrop-blur-sm',
+          'backdrop-brightness-150',
+          'shadow-md/70',
+          'dark:backdrop-brightness-80'
+        );
+
+          navBar.classList.add(
+          'backdrop-blur-none',
+          'backdrop-brightness-100',
+          'dark:backdrop-brightness-100'
+        );
+
+    };
 })
 
 document.querySelectorAll('#navBar ul li a[href^="#"]').forEach(link => {
