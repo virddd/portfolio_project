@@ -1,3 +1,4 @@
+
 const home = document.getElementById('home');
 const navBar = document.getElementById('navBar');
 const carousel = document.getElementById('carousel');
@@ -23,7 +24,7 @@ window.addEventListener ('scroll', () => {
           'backdrop-blur-sm',
           'backdrop-brightness-150',  
           'shadow-md/70',
-          'dark:backdrop-brightness-80'
+          'dark:backdrop-brightness-70'
         );
 
         }else {
@@ -31,7 +32,7 @@ window.addEventListener ('scroll', () => {
           'backdrop-blur-sm',
           'backdrop-brightness-150',
           'shadow-md/70',
-          'dark:backdrop-brightness-80'
+          'dark:backdrop-brightness-70'
         );
 
           navBar.classList.add(
