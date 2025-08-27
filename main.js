@@ -22,7 +22,7 @@ window.addEventListener ('scroll', () => {
 
         navBar.classList.add(
           'backdrop-blur-sm',
-          'backdrop-brightness-150',  
+          'backdrop-brightness-800',  
           'shadow-md/70',
           'dark:backdrop-brightness-70'
         );
@@ -30,7 +30,7 @@ window.addEventListener ('scroll', () => {
         }else {
         navBar.classList.remove(
           'backdrop-blur-sm',
-          'backdrop-brightness-150',
+          'backdrop-brightness-800',
           'shadow-md/70',
           'dark:backdrop-brightness-70'
         );
