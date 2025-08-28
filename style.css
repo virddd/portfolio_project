@@ -11,6 +11,15 @@
     font-style: normal;
 }
 
+/* .gradient-border:hover {
+  background: 
+    linear-gradient(#ffffff00, #ffffff00) padding-box,
+    linear-gradient(to right, #00989d, #185e66) border-box; 
+    transition: all;
+    transition-duration: 400ms;
+} */
+
+
 #paling{
     pointer-events: none;
 }
